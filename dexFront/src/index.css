@@ -1,102 +1,127 @@
+/* Sets default styles for the entire page */
 body {
-  margin: 0;
+  margin: 0; /* Removes any default margin set by the browser */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgb(25, 33, 52) !important;
-  background: rgb(25, 33, 52);
+    sans-serif; /* Sets the default font family for the page */
+  -webkit-font-smoothing: antialiased; /* Applies anti-aliasing to improve font rendering */
+  -moz-osx-font-smoothing: grayscale; /* Applies grayscale anti-aliasing to improve font rendering on macOS */
+  height: 100vh; /* Sets the height of the body to the full height of the viewport */
+  width: 100vw; /* Sets the width of the body to the full width of the viewport */
+  background-color: rgb(25, 33, 52) !important; /* Sets the background color of the body */
+  background: rgb(25, 33, 52); /* Sets the background color of the body */
   background: linear-gradient(
     180deg,
-    rgba(25, 33, 52, 1) 28%,
+    rgba(25, 33, 52, 1) 28%, /* Creates a gradient background that transitions from a dark blue to a darker blue */
     rgba(7, 8, 21, 1) 75%
   );
-  color: white;
+  color: white; /* Sets the default text color to white */
 }
 
+/* Applies styles to all code snippets */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    monospace; /* Sets the font family for the code snippet */
 }
 
+/* Styles for the input element */
 .ant-input {
+  /* Sets the background color of the input */
   background-color: #1f2639 !important;
+  /* Sets the font color of the input */
   color: white !important;
+  /* Sets the width of the input's border */
   border-width: 0px !important;
+  /* Sets the height of the input */
   height: 96px !important;
+  /* Adds margin to the bottom of the input */
   margin-bottom: 5px;
+  /* Sets the font size of the input */
   font-size: 35px;
+  /* Sets the border radius of the input */
   border-radius: 12px !important;
 }
 
+/* Styles for the input placeholder */
 .ant-input::placeholder {
+  /* Sets the color of the placeholder text */
   color: #5f6783 !important;
 }
 
+/* Hide the arrow of the popover */
 .ant-popover-arrow {
   visibility: hidden;
 }
 
+/* Set the color of the title in the popover to white */
 .ant-popover-title {
   color: white !important;
 }
 
+/* Set the color of the content in the popover to white */
 .ant-popover-inner-content {
   color: white !important;
 }
 
+/* Set the minimum width and height of the popover's inner container */
 .ant-popover-inner {
   min-width: 260px !important;
   min-height: 140px !important;
+  /* Set the border and background color of the popover's inner container */
   border: 1px solid #21273a;
   background-color: #0e111b !important;
 }
 
+/* Apply margin to the radio group */
 .ant-radio-group {
   margin-top: 10px;
 }
 
+/* Styling for the radio button wrapper */
 .ant-radio-button-wrapper {
-  background-color: #1f2639 !important;
-  color: white !important;
-  font-weight: 500;
-  border-color: white !important;
+  background-color: #1f2639 !important; /* Set background color */
+  color: white !important; /* Set text color */
+  font-weight: 500; /* Set font weight */
+  border-color: white !important; /* Set border color */
 }
 
 .ant-radio-button-wrapper-checked {
+  /* sets the border color of the radio button when checked */
   border-color: white !important;
+  /* sets the background color of the radio button when checked */
   background-color: #363e54 !important;
 }
 
 .ant-radio-button-wrapper-checked::before {
+  /* sets the background color of the dot inside the radio button when checked */
   background-color: white !important;
 }
 
 .ant-modal-content {
-  background-color: #0e111b !important;
-  color: white !important;
-  padding: 0px !important;
+  background-color: #0e111b !important; /* sets background color of modal content */
+  color: white !important; /* sets font color of modal content */
+  padding: 0px !important; /* removes padding from modal content */
 }
 
 .ant-modal {
-  border: 1px solid #363e54;
-  width: 400px !important;
-  border-radius: 10px;
+  border: 1px solid #363e54; /* sets border of modal */
+  width: 400px !important; /* sets width of modal */
+  border-radius: 10px; /* sets border radius of modal */
 }
 
+/* Set the background color of the modal header */
 .ant-modal-header {
   background-color: #0e111b !important;
 }
 
+/* Set the color, padding and margin of the modal title */
 .ant-modal-title {
   color: white !important;
   padding-top: 17px !important;
   margin-left: 20px !important;
 }
 
+/* Set the color and transition of the modal close icon */
 .ant-modal-close-icon {
   color: #363e54 !important;
   transition: 0.3s;

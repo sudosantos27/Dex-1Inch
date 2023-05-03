@@ -1,186 +1,283 @@
+/* Center align all content within elements that have a class of "App" */
 .App {
   text-align: center;
 }
 
+/* Define styles for the <header> element */
 header {
+  /* Set the height of the header to 100 pixels */
   height: 100px;
+
+  /* Use flexbox to align child elements horizontally */
   display: flex;
+
+  /* Space out child elements so they fill the entire width of the header */
   justify-content: space-between;
+
+  /* Vertically align child elements within the header */
   align-items: center;
+
+  /* Add 50 pixels of padding to the left and right sides of the header */
   padding-left: 50px;
   padding-right: 50px;
 }
 
+/* Define styles for elements with a class of "logo" */
 .logo{
+  /* Set the width of the logo to 40 pixels */
   width: 40px;
+
+  /* Set the height of the logo to 40 pixels */
   height: 40px;
+
+  /* Add 20 pixels of padding to the right of the logo */
   padding-right: 20px;
 }
 
+/* Define styles for elements with a class of "eth" */
 .eth{
+  /* Set the width of the "eth" element to 20 pixels */
   width: 20px;
+
+  /* Set the height of the "eth" element to 20 pixels */
   height: 20px;
+
+  /* Add 10 pixels of padding to the right of the "eth" element */
   padding-right: 10px;
-
 }
 
+
+/* This CSS selector applies styles to an element with the class "leftH" */
 .leftH {
+  /* This property sets the element's display property to "flex", allowing it to use flexbox features */
   display: flex;
+  /* This property aligns items along the vertical axis to the center of the container */
   align-items: center;
+  /* This property adds a gap of 20 pixels between each child element of the container */
   gap: 20px;
 }
 
+/* This CSS selector applies styles to an element with the class "rightH" */
 .rightH {
+  /* This property sets the element's display property to "flex", allowing it to use flexbox features */
   display: flex;
+  /* This property aligns items along the vertical axis to the center of the container */
   align-items: center;
+  /* This property aligns items along the horizontal axis to the right of the container */
   justify-content: flex-end;
+  /* This property adds a gap of 20 pixels between each child element of the container */
   gap: 20px;
 }
 
+
+/* Applies to any element with the class 'headerItem' */
 .headerItem {
+  /* Adds 10px of padding on all sides */
   padding: 10px;
+  /* Adds 15px of padding to the left side */
   padding-left: 15px;
+  /* Adds 15px of padding to the right side */
   padding-right: 15px;
+  /* Adds rounded corners to the element */
   border-radius: 5px;
+  /* Sets the font weight to bold */
   font-weight: 500;
+  /* Adds a transition effect to any property that changes */
   transition: 0.3s;
+  /* Displays the element as a flex container */
   display: flex;
+  /* Vertically centers the items within the container */
   align-items: center;
 }
 
+/* Applies to any element with the class 'headerItem' when hovered over */
 .headerItem:hover {
+  /* Changes the background color to a dark blue */
   background-color: rgb(34, 42, 58);
+  /* Sets the cursor to a pointer */
   cursor: pointer;
 }
 
+
 .connectButton {
+  /* Background color of the button */
   background-color: #243056; 
+
+  /* Padding inside the button */
   padding: 10px;
   padding-right: 20px;
   padding-left: 20px;
+
+  /* Rounded border */
   border-radius: 100px;
+
+  /* Text color */
   color: #5981F3;
+
+  /* Font weight of the text */
   font-weight: bold;
+
+  /* Transition effect when hovering over the button */
   transition: 0.3s;
 }
 
 .connectButton:hover {
+  /* Change cursor to pointer when hovering over the button */
   cursor: pointer;
-  color: #3b4874
+
+  /* Change text color when hovering over the button */
+  color: #3b4874;
 }
 
+
+/* This class centers the content horizontally and adds top margin */
 .mainWindow {
   margin-top: 40px;
   display: flex;
   justify-content: center;
 }
 
+/* This class removes the underline from links and sets the text color to white */
 .link {
   text-decoration: none;
   color: white;
 }
 
+
+/* Sets the width and background color for the trade box */
 .tradeBox {
   width: 400px;
   background-color: #0E111B;
+
+  /* Adds a border around the trade box */
   border: 2px solid #21273a;
+
+  /* Sets the minimum height and border radius of the trade box */
   min-height: 300px;
   border-radius: 15px;
+
+  /* Aligns the contents of the trade box to the left */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
+  /* Adds padding to the left and right of the trade box */
   padding-left: 30px;
   padding-right: 30px;
 }
 
 
+
 .tradeBoxHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 98%;
+  display: flex; /* The container is a flex container */
+  justify-content: space-between; /* Items are evenly distributed with the maximum amount of space between them */
+  align-items: center; /* Items are centered vertically */
+  width: 98%; /* The width of the container is set to 98% of its parent container */
 }
 
+
+/* This class defines the default style for elements with class "cog". */
 .cog {
-  color: #51586f;
-  transition: 0.3s;
+  color: #51586f; /* Set the default color of the icon. */
+  transition: 0.3s; /* Add a smooth transition effect for changes in style. */
 }
 
+/* This class defines the style of elements with class "cog" when hovered over. */
 .cog:hover {
-  color: white;
-  rotate: 90deg;
-  cursor: pointer;
+  color: white; /* Change the color of the icon to white when hovered over. */
+  rotate: 90deg; /* Rotate the icon 90 degrees when hovered over. */
+  cursor: pointer; /* Change the cursor to a pointer when hovered over. */
 }
 
+
+/* Sets the background color of the button */
 .switchButton {
   background-color: #3a4157;
+  /* Sets the width and height of the button */
   width: 25px;
   height: 25px;
+  /* Sets the alignment of content inside the button */
   align-items: center;
   justify-content: center;
+  /* Displays the button as a flex container */
   display: flex;
+  /* Adds rounded corners to the button */
   border-radius: 8px;
+  /* Positions the button absolutely with respect to its parent */
   position: absolute;
   top: 86px;
   left: 180px;
+  /* Sets the text color of the button */
   color: #5F6783;
+  /* Sets the border properties of the button */
   border: 3px solid #0E111B;
+  /* Sets the font size of the button */
   font-size: 12px;
-  transition: 0.3s
+  /* Sets the transition effect for the button */
+  transition: 0.3s;
 }
+
 
 .dollarAmount {
-  position: absolute;
-  top: 75px;
-  left: 14px;
-  font-size: 10px;
-  color: #5F6783;
+  position: absolute;  /* sets the position of the element to absolute */
+  top: 75px;  /* positions the element 75px from the top of its positioned container */
+  left: 14px;  /* positions the element 14px from the left of its positioned container */
+  font-size: 10px;  /* sets the font size of the text */
+  color: #5F6783;  /* sets the color of the text */
 }
 
+
+/* Applies hover effect when hovering over switchButton */
 .switchButton:hover {
   color: white;
   cursor: pointer;
 }
 
+/* Positions the inputs relatively */
 .inputs {
   position: relative;
 }
 
+
+/* Styles for the first asset display */
 .assetOne {
-  position: absolute;
-  min-width: 50px;
-  height: 30px;
-  background-color: #3a4157;
-  top: 36px;
-  right: 20px;
-  border-radius: 100px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 5px;
-  font-weight: bold;
-  font-size: 17px;
-  padding-right: 8px;
+  position: absolute; /* Positioning the element relative to its nearest positioned ancestor */
+  min-width: 50px; /* Setting the minimum width for the element */
+  height: 30px; /* Setting the height for the element */
+  background-color: #3a4157; /* Setting the background color */
+  top: 36px; /* Positioning the element from the top */
+  right: 20px; /* Positioning the element from the right */
+  border-radius: 100px; /* Setting the border radius to make the element round */
+  display: flex; /* Setting the display to flex for its child elements */
+  justify-content: flex-start; /* Aligning the child elements to the start of the flex container */
+  align-items: center; /* Vertically centering the child elements */
+  gap: 5px; /* Setting the gap between the child elements */
+  font-weight: bold; /* Setting the font weight of the text */
+  font-size: 17px; /* Setting the font size of the text */
+  padding-right: 8px; /* Adding padding to the right side of the element */
 }
 
+/* Styles for the second asset display */
 .assetTwo {
-  position: absolute;
-  min-width: 50px;
-  height: 30px;
-  background-color: #3a4157;
-  top: 135px;
-  right: 20px;
-  border-radius: 100px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 5px;
-  font-weight: bold;
-  font-size: 17px;
-  padding-right: 8px;
+  position: absolute; /* position the element absolutely within its containing element */
+  min-width: 50px; /* set a minimum width for the element */
+  height: 30px; /* set a fixed height for the element */
+  background-color: #3a4157; /* set the background color of the element */
+  top: 135px; /* position the top of the element 135px from the top of its containing element */
+  right: 20px; /* position the right of the element 20px from the right of its containing element */
+  border-radius: 100px; /* round the corners of the element to create a circular shape */
+  display: flex; /* use flexbox to create a flexible layout */
+  justify-content: flex-start; /* align the flex items to the start of the main axis */
+  align-items: center; /* align the flex items to the center of the cross axis */
+  gap: 5px; /* set the gap between the flex items */
+  font-weight: bold; /* set the font weight of the text inside the element to bold */
+  font-size: 17px; /* set the font size of the text inside the element */
+  padding-right: 8px; /* add some padding to the right of the element to create some space between the text and the edge */
 }
 
+
+/* When hovering over the assetOne or assetTwo element, change the cursor to a pointer */
 .assetOne:hover{
   cursor: pointer;
 }
@@ -194,36 +291,59 @@ header {
   margin-left: 5px;
 }
 
+/* The following CSS styles the swap button */
 .swapButton {
+  /* Centers the contents vertically and horizontally within the element */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #243056; 
+
+  /* Background color of the button */
+  background-color: #243056;
+
+  /* Width of the button, taking into account any padding or borders */
   width: calc(100%);
+
+  /* Height of the button */
   height: 55px;
+
+  /* Font size of the text within the button */
   font-size: 20px;
+
+  /* Rounded corners of the button */
   border-radius: 12px;
+
+  /* Text color of the button */
   color: #5981F3;
+
+  /* Font weight of the text within the button */
   font-weight: bold;
+
+  /* Transition effect when the button is hovered over */
   transition: 0.3s;
+
+  /* Margin between the button and the elements above and below it */
   margin-bottom: 30px;
   margin-top: 8px;
 }
 
+/* Styling for disabled swap button */
 .swapButton[disabled] {
   background-color: #243056;
   opacity: 0.4;
-  color: #5982f39b;
+  color: #5982f39b; /* Slightly transparent version of the original color */
 }
 
+/* Styling for disabled swap button when hovering */
 .swapButton[disabled]:hover {
   cursor: not-allowed;
   background-color: #243056;
 }
 
+/* Styling for swap button when hovering */
 .swapButton:hover {
   cursor: pointer;
-  background-color: #3b4874
+  background-color: #3b4874; /* Darker version of the original color */
 }
 
 .tokenLogo {
