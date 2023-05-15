@@ -9,6 +9,15 @@ The project has two main components: the frontend and the backend. The frontend 
 To use the application, users simply need to connect their Metamask wallet to the frontend. Once connected, users can select the tokens they want to swap, and the application will automatically execute the trade at the best available rate.
 
 
+![SwapPage](./dex1inch1.png)
+
+![SwapPage](./dex1inch2.png)
+
+![SwapPage](./dex1inch3.png)
+
+![SwapPage](./dex1inch4.png)
+
+
 ---------------------------------------------------------------------------------------------------------------------------------
 
 Summary of the dependencies listed in the package.json file of dexFront:
